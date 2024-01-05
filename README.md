@@ -35,9 +35,13 @@ to mogą być różne dane zapisywalne bez białych znaków EOL,
 generowanie struktury mogłoby wygladac tak: 
 
 ```
-ndof <add/del> <output> <data path> <filtered files> 
+ndof <add/del/update> <output> <data path> <filtered files> 
 ```
-z opcjami: add / del 
+z opcjami: 
++ add - dodanie do istniejacego pliku
++ del - usuniecie z pliku
++ update - aktualizacja wszystkich danych w pliku ze zrodlami
+
 
 ```bash
 ndof app.ndof ~/www *.js *.html *.json 
