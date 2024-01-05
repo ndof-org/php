@@ -1,4 +1,4 @@
-# [php](http://php.ndof.org)
+ # [php](http://php.ndof.org)
 
 NDOF to format pliku do przechowywania różnych formatów danych w jednym pliku 
 
@@ -22,6 +22,13 @@ backendowa aplikacja z frontendem w PHP mogłaby się składać z 4 plików:
 
 + .ndof.csv - konfiguracja w pliku CSV
 
+
+.ndof.csv
+```csv
+path,protocol,filter,convert,meta
+./web,fs,*.js,,comments
+./web,fs,*.md,*.json,,
+```
 
 w przypadku zmiany techstacka- nie ma struktury, więc nie ma problemu z migracją, dane mogą być edytowane z innego projektu, gdzie masz zależność np. z submodułu, i "pakowaną" strukturę do danych aplikacji w formacie NDOF 
 
