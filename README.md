@@ -10,13 +10,17 @@ mapowanie systemu pliku i requestów http dla cachowania danych aplikacji
 
 backendowa aplikacja z frontendem w PHP mogłaby się składać z 4 plików: 
 
-1. index.php z funkcjami i programem oraz funkcją czytania z pliku NDOF 
++ index.php z funkcjami i programem oraz funkcją czytania z pliku NDOF 
 
-2. plik danych aplikacji: application.ndof 
++ plik danych aplikacji: application.ndof 
 
-3. user.sqlite - dane użytkownika z aplikacji 
++ user.sqlite - dane użytkownika z aplikacji 
 
-4. compose.json - z tradycyjnym pobieraniem zależnosci dla PHP 
++ compose.json - z tradycyjnym pobieraniem zależnosci dla PHP
+
++ ndof.php - biblioteka SDK do użycia w index.php
+
++ .ndof.csv - konfiguracja w pliku CSV
 
 
 w przypadku zmiany techstacka- nie ma struktury, więc nie ma problemu z migracją, dane mogą być edytowane z innego projektu, gdzie masz zależność np. z submodułu, i "pakowaną" strukturę do danych aplikacji w formacie NDOF 
